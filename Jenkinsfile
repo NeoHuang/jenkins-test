@@ -20,7 +20,10 @@ pipeline {
 
   }
   triggers {
-    issueCommentTrigger('.*LGTM.*')
+    GenericTrigger(
+      token: 'abc123',
+      causeString: 'Triggered on PR change and reviews'
+      )
   }
   environment {
     GOCACHE = '/tmp'
