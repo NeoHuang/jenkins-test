@@ -19,6 +19,9 @@ pipeline {
     }
 
   }
+  triggers {
+    issueCommentTrigger('.*LGTM.*')
+  }
   environment {
     GOCACHE = '/tmp'
   }
