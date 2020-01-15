@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image '1.12.15-stretch'
+      image '1.12-stretch'
     }
 
   }
